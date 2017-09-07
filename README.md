@@ -9,7 +9,7 @@ Clap detection and singnaling program for Raspberry Pi running on Python3.
 
 ## Installation
 
-The following assumes that you're on Raspbian OS. 
+The following assumes that you're already on a Raspberry Pi (I updated and tested on a Pi3), and that you already have RaspbianOS installed on the Pi
 
 ### Install OS-Level Packages
 
@@ -28,21 +28,19 @@ Navigate to the project directory (`cd path/to/pi-clap`) and run the following:
 sudo pip3 install -r requirements.txt
 ```
 
- * Audio Driver [1],[2],[3].
+## Hardware Setup
 
-###Setting up
+Connect the output line to BCM #24 Pin on RPi.
 
-1. [Download Raspbian OS](http://www.raspberrypi.org/downloads/).
-2. [Install Raspbian OS in RPi](http://www.raspberrypi.org/documentation/installation/installing-images/).
-3. Install all dependecies
-4. Connect the output line to BCM #24 Pin on RPi.
-5. Run 'sudo python main.py' command in terminal.
+## Run pi-clap
+
+While in your project directory, run `sudo python main.py`.
 
 ( Try 2 claps to activate the output line for 1 sec. Note: Use 4 claps to exit from the system )
 
-###References
+## References
 
  1. https://learn.adafruit.com/usb-audio-cards-with-a-raspberry-pi/instructions
- 2. http://computers.tutsplus.com/articles/using-a-usb-audio-device-with-a-raspberry-pi--mac-55876
- 3. http://forum.kodi.tv/showthread.php?tid=172072
- 4. http://www.raspberrypi.org/documentation/installation/installing-images/
+ 1. http://computers.tutsplus.com/articles/using-a-usb-audio-device-with-a-raspberry-pi--mac-55876
+ 1. http://forum.kodi.tv/showthread.php?tid=172072
+ 1. http://www.raspberrypi.org/documentation/installation/installing-images/
