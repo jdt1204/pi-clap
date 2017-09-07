@@ -1,25 +1,33 @@
-pi-clap
-=======
+# PI-Clap Updated
 
-Clap detection and singnaling program for Raspberry Pi
+Clap detection and singnaling program for Raspberry Pi running on Python3.
 
-###H/w Requirements
+## Hardware Requirements
 
- * Raspberry Pi
- * Microphone
- * Audio Card
- * Bread Board (optional)
+- Raspberry Pi
+- Microphone - I used a simple USB microphone
 
-###Dependencies
+## Installation
 
-**Python**
+The following assumes that you're on Raspbian OS. 
 
- * RPi.GPIO
- * pyaudio
+### Install OS-Level Packages
 
-**Other**
+- portaudio19-dev
+- python-all-dev (**Note**: This comes with Raspbian, but I put it here just in case)
 
- * Rasbian OS [3].( Need to test. Not working with Pidora OS)
+### Clone Repo
+
+Run `git clone https://github.com/jdt1204/pi-clap` to bring the project onto your PI.
+
+### Install Python Packages
+
+Navigate to the project directory (`cd path/to/pi-clap`) and run the following: 
+
+```bash
+sudo pip3 install -r requirements.txt
+```
+
  * Audio Driver [1],[2],[3].
 
 ###Setting up
